@@ -1,0 +1,81 @@
+<html>
+<head>
+<title>Slider to change fusiontable maps</title>
+<link href="http://code.google.com/apis/maps/documentation/javascript/examples/default.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<script src="simple-slider.min.js"></script>
+<link href="simple-slider-volume.css" rel="stylesheet" type="text/css" />
+<link href="simple-slider.css" rel="stylesheet" type="text/css" />
+
+<script type="text/javascript">
+function initialize() {
+	var myLatLng = new google.maps.LatLng(67.5,-95);
+	map = new google.maps.Map(document.getElementById('map_canvas'), {
+    center: myLatLng,
+    zoom: 3,
+	panControl: false,
+  	zoomControl: true,
+	zoomControlOptions: {
+    position: google.maps.ControlPosition.LEFT_CENTER
+    },
+  	mapTypeControl: false,
+      mapTypeId: 'roadmap'
+    });
+	// Replace the xxx with your Fusion Tables IDs.
+	var tableid1 = 'xxx'
+	var tableid2 = 'xxx'
+
+	layer1 = new google.maps.FusionTablesLayer(tableid1);
+	layer2 = new google.maps.FusionTablesLayer(tableid2);
+
+	layer1.setQuery("SELECT geometry FROM " + tableid1);
+	layer2.setQuery("SELECT geometry FROM " + tableid2);
+
+	layer1.setMap(map);
+}
+
+	tableidselections = 0;
+/* fungsi untuk mengganti layer */
+function changeLayer(tableidselections) {
+
+	if (tableidselections == 1){
+		clearmap();
+		layer1.setMap(map); }
+
+	if (tableidselections == 2){
+		clearmap();
+		layer2.setMap(map); }
+		}
+
+function clearmap() {
+	layer1.setMap(null);
+	layer2.setMap(null);
+}
+
+</script>
+
+
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+</head>
+
+<body onLoad="initialize()">
+<div id="map_canvas" style="width:900px; height:500px;"></div>
+  <h2>Scroll the scrubber to change maps</h2>
+  <input type="text" data-slider="true" data-slider-values="1,2" data-slider-equal-steps="true" data-slider-snap="true">
+    <script>
+    $(document).ready(function () {
+
+  $("[data-slider]")
+    .bind("slider:ready slider:changed", function (event, data) {
+    $(this)
+       .nextAll(".output:first")
+          .html(data.value.toFixed(0));
+      tableidselections = data.value.toFixed(0);
+      changeLayer(tableidselections);
+    });
+    });
+  </script>
+</body>
+</html>
