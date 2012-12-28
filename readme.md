@@ -23,6 +23,6 @@ See it in action [here][action]
 Acknowledgements <a id="acknowledgements" />
 ----------------
 
-	[ss]: http://loopj.com/jquery-simple-slider/
+  [ss]: http://loopj.com/jquery-simple-slider/
 
 FusionTablesScrubber uses James Smiths' [jQuery Simple Slider][ss]
