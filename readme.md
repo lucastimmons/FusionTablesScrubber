@@ -3,7 +3,7 @@ Download
 
 [FusionTablesSlider ][dl] -- 12 Jan 2014
 
-[dl]: https://github.com/PiotrKrosniak/FusionTablesSlider.zip
+[dl]: https://github.com/PiotrKrosniak/FusionTablesSlider/archive/master.zip
 
 
 Introduction
