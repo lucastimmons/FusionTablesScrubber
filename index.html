@@ -22,14 +22,15 @@ function initialize() {
   	mapTypeControl: false,
       mapTypeId: 'roadmap'
     });
-	// Replace the xxx with your Fusion Tables IDs.
+	// Replace the xxx with your Fusion Tables IDs. 
+	//You an use FT Wizard http://fusion-tables-api-samples.googlecode.com/svn/trunk/FusionTablesLayerWizard/src/index.html
 layer1 = new google.maps.FusionTablesLayer({
       query: {
         select: 'XXXX-GEOODED-COLUMN-XXXX',
         from: 'XXXX-FUSION-TABLE-ID-XXXX'
       },
-        styleId: 2,
-        templateId: 2,
+        styleId: XXXX,
+        templateId: XXXX,
       map: map, 
     });
 	
@@ -38,8 +39,8 @@ layer2 = new google.maps.FusionTablesLayer({
         select: 'XXXX-GEOODED-COLUMN-XXXX',
         from: 'XXXX-FUSION-TABLE-ID-XXXX'
        },
-        styleId: 4,
-        templateId: 4,
+        styleId: XXXX,
+        templateId: XXXX,
       map: map, 
     });
 
