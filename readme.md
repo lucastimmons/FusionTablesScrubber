@@ -19,8 +19,9 @@ change map layers from Google Fusion Tables.
 DEMO
 ------------
 
-DEMO 
+[DEMO] [bb]
 
+[bb]: http://piotrkrosniak.github.io/
 Slider style
 
 <img src="http://4.bp.blogspot.com/-g3zU1lymAh4/UtJethU-StI/AAAAAAAAGfc/Ss-rMMf4ur4/s1600/Screenshot+from+2014-01-12+10:20:10.png"/>
@@ -30,7 +31,7 @@ Acknowledgements <a id="acknowledgements" />
 
   [ss]: http://loopj.com/jquery-simple-slider/
 
-FusionTablesScrubber uses James Smiths' [jQuery Simple Slider][ss]
+FusionTablesSlider uses James Smiths' [jQuery Simple Slider][ss]
 
 [dl]: https://github.com/lucastimmons/FusionTablesScrubber/
 
