@@ -19,7 +19,7 @@ change map layers from Google Fusion Tables.
 DEMO
 ------------
 
-[DEMO] [bb]
+[DEMO http://piotrkrosniak.github.io/] [bb]
 
 [bb]: http://piotrkrosniak.github.io/
 Slider style
