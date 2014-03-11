@@ -12,7 +12,7 @@ Introduction
 FusionTablesSlider is a simple script for using a JQuery slider to
 change map layers from Google Fusion Tables.
 
-[Visit Piotr GIS Works ][aa] my Blog, tutorial how to use this repo and much more.
+[Visit Piotr GIS Works ][aa] my Blog, tutorials how to use this repo and much more.
 
 [aa]: http://piotrgisworks.blogspot.com/ 
 
